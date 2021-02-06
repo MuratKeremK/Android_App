@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DoctorMainActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -17,57 +17,27 @@
         app:srcCompat="@drawable/girisekranimage"
         tools:ignore="MissingConstraints" />
 
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/makeanappointmentBtn"
+        android:id="@+id/doctorAppointmentsTextView"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/mainactivtybuttons"
+        android:onClick="MyAppointments"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:text="Make An appoıntment"
-        android:onClick="MakeAnAppointment"
+        android:text="Appoıntments"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/myappointmentBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:ignore="MissingConstraints" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/myappointmentBtn"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/mainactivtybuttons"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="My Appoıntments"
-        android:onClick="MyAppointments"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/makeanappointmentBtn"
-        tools:ignore="MissingConstraints" />
+
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/AccountBtn"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/mainactivtybuttons"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="Account"
-        android:onClick="GoAccountInfo"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AskQuestionBtn"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/AskQuestionBtn"
+        android:id="@+id/doctorQuestionsTextView"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -75,15 +45,15 @@
         android:onClick="AskQuestion"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:text="ask questIon"
+        android:text="QUESTIONS"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myappointmentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/doctorAppointmentsTextView"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/exitBtn"
+        android:id="@+id/doctorExitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
@@ -97,6 +67,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
